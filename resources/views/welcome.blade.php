@@ -17,7 +17,25 @@
 
 <body>
 
-    <h1>DC Comics</h1>
+    <div class="container">
+        <h1>DC Comics</h1>
+        <section class="justify-content-center align-items-center">
+            <div class="row">
+                @foreach ($comics as $comic)
+                    <div class="col-12 col-sm-6 col-md-4 col-mg-3">
+                        <div class="card">
+                            <h3 class="card-title">
+                                {{ $comic->title }}
+                            </h3>
+                            <div class="card-body">
+                                {{--  --}}
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+    </div>
 
 </body>
 
